@@ -75,3 +75,5 @@
 \emf#m
 \Ln#m
 \T{arg1}#m
+\tv{arg1}#m
+\Deg
