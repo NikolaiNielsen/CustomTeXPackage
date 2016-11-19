@@ -77,3 +77,4 @@
 \T{arg1}#m
 \tv{arg1}#m
 \Deg
+\brac[size]{arg1}
