@@ -1,7 +1,3 @@
-\NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{Nikolai}
-[2016/05/23 v0.01 LaTeX package for my own purpose]
-
 \RequirePackage[Danish]{babel}			% Dansk og engelsk
 \RequirePackage[utf8]{inputenc}				% Vi bruger UTF-8 til Æ, Ø & Å
 \RequirePackage{amsmath,amssymb,url,graphicx} % Math-ting, URLs og illustrationer
@@ -37,9 +33,7 @@
 \newcommand{\Vg}[1]{\bm{#1}}
 \newcommand{\Set}[1]{\mathbb{#1}}						% Sæt, fx reelle tal
 \newcommand{\e}[1]{\text{ #1}}							% enheder med mellemrum i starten
-\newcommand{\DU}[1]{\underline{\underline{#1}}} 		% dobbelt understregning
 \newcommand{\Lim}[2]{\lim\limits_{#1 \rightarrow #2}}	% Nyttig grænseværdi
-\newcommand{\Maple}[2]{\\\includegraphics[width=#2cm]{img/maple#1.png}} % Til Matematikopgaver
 \newcommand{\diff}[3][\partial]{\frac{#1 #2}{#1 #3}}
 \newcommand{\Bf}[1]{\mathbf{#1}} 		% til fed matematikskrift
 \newcommand{\pp}[1]{\left( #1 \right)}	% Stor blød parentes
@@ -47,7 +41,7 @@
 \newcommand{\kk}[1]{\left\{ #1 \right\}}% Stor tuborgklamme
 \newcommand{\vv}[1]{\left| #1 \right|}	% Stor lodret streg
 \newcommand{\inverse}{^{-1}}			% hvis man tit skal skrive ^{-1}, ie $X\inverse$
-\newcommand{\konj}[1]{\overline{#1}}	% Kompleks konjugeret
+\newcommand{\konj}{^*}
 
 
 % 'upright d'. Gør at du kan afslutte integraler med f.eks. \int x \ud x
@@ -58,33 +52,14 @@
 \RequirePackage{mathrsfs}
 \RequirePackage{ushort}					% kort understregning
 \RequirePackage{blkarray}				% blockarrays, til angivning af rækker/søjler i en matrix.
-\DeclareMathOperator{\sign}{sign}
-\DeclareMathOperator{\Pol}{Pol}
-\DeclareMathOperator{\Span}{span}
-\DeclareMathOperator{\rg}{rg}
-\DeclareMathOperator{\id}{id}					% Identitetafbildning - LinAlg
-\newcommand{\morf}[3]{#1\colon #2 \to #3} 		% \morf{f}{A}{B} = f\colon A\to B
-\newcommand{\morffFF}[3][f]{#1 \colon \Set{F}^{#2} \to \Set{F}^{#3}} % Afbildning i Set(F) - LinAlg
-\newcommand{\mat}[1]{\ushortd{#1}}				% Matrixnotation - LinAlg
-\newcommand{\trans}[2]{{}_{#1}\mathsf{T}_{#2}}
-\newcommand{\bas}[1]{\mathscr{#1}}
-\newcommand{\ele}[2]{{}_{#1}[#2]}
-\newcommand{\transf}[3]{{}_{#1}[#2]_{#3}}
 
 % MatF 1 & 2
 % Standardenhedsvektorer
-\newcommand{\Vi}{\V{i}}
-\newcommand{\Vj}{\V{j}}
-\newcommand{\Vk}{\V{k}}
 \newcommand{\grad}{\nabla}
 \newcommand{\ind}[2]{\langle #1 | #2 \rangle}
 \newcommand{\norm}[1]{\lVert #1 \rVert}
-\DeclareMathOperator{\erf}{erf}
-\DeclareMathOperator{\Ln}{Ln}
 \newcommand{\curl}[1]{\nabla \times \V{#1}}
 \newcommand{\diverg}[1]{\nabla \D \V{#1}}
-\DeclareMathOperator{\Res}{Res}
-%\newcommand{\Lap}[1]{\mathcal{L} \bb{#1}}
 \newcommand{\Lap}[1]{\mathcal{L}\bb{#1}}
 \newcommand{\lap}[1]{\hat{#1}(s)}
 \newcommand{\invLap}[1]{\mathcal{L}\inverse\bb{#1}}
@@ -93,10 +68,6 @@
 
 
 % EL1
-\newcommand{\kc}[1][1]{\frac{#1}{4 \pi \epsilon_0}}
-\def\sr{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{ScriptR}}$}}}
-\def\bsr{{\mbox{$\resizebox{.09in}{.08in}{\includegraphics[trim= 1em 0 14em 0,clip]{BoldR}}$}}}
-\def\usr{{\mbox{$\hat \bsr$}}}
 \newcommand{\U}[1]{\hat{\V{#1}}}
 \newcommand{\Ug}[1]{\hat{\Vg{#1}}}
 \newcommand{\Vx}{\U{x}}
@@ -114,4 +85,3 @@
 
 % Kvant1
 \newcommand{\brac}[2][]{#1 \langle #2 #1 \rangle} % Bra og Ket
-\newcommand{\infint}{\int_{-\infty}^{+\infty}} % uendelige integraler made easy

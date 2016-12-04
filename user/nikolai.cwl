@@ -78,3 +78,4 @@
 \tv{arg1}#m
 \Deg
 \brac[size]{arg1}
+\infint#m
