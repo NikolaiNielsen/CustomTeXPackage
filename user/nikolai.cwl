@@ -79,3 +79,4 @@
 \Deg
 \brac[size]{arg1}
 \infint#m
+\op{arg1}#m
