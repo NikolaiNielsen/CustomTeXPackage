@@ -80,3 +80,7 @@
 \brac[size]{arg1}
 \infint#m
 \op{arg1}#m
+\haev#m
+\aplus#m
+\saenk#m
+\aminus#m
