@@ -23,7 +23,7 @@
 \DU{arg1}#m
 \Lim{arg1}{arg2}#m
 \Maple{arg1}{arg2}#n
-\Set{arg1}#m
+\Saet{arg1}#m
 \U{arg1}#m
 \Vi#m
 \Vj#m
