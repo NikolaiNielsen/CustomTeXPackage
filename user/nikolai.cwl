@@ -6,6 +6,7 @@
 #include:array
 #include:blkarray
 #include:bm
+#include:braket
 #include:caption
 #include:floatrow
 #include:gauss
