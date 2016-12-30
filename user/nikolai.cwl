@@ -46,7 +46,7 @@
 \inverse#m
 \kc[1]#m
 \kk{arg1}#m
-\konj{arg1}#m
+\konj#m
 \mat{arg1}#m
 \morffFF[f]{arg2}{arg3}#m
 \morf{arg1}{arg2}{arg3}#m
