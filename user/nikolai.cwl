@@ -81,7 +81,8 @@
 \brac[size]{arg1}
 \infint#m
 \op{arg1}#m
-\haev#m
+\haev{a}#m
 \aplus#m
-\saenk#m
+\saenk{a}#m
 \aminus#m
+\hs{a}#m
